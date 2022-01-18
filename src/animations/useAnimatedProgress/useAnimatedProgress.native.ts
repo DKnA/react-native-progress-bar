@@ -9,7 +9,7 @@ export default function useAnimatedProgress(width: number, percent: number): Ani
   useEffect(() => {
     timing(translateX, {
       toValue: width * percent,
-      duration: 200,
+      duration: 2000,
       easing: EasingNode.inOut(EasingNode.ease)
     }).start();
   }, [percent, width]);
